@@ -19,7 +19,7 @@ if not api_key:
     st.stop()
 
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-3.8-flash")
 
 # User Inputs
 topic = st.text_input("Enter the Topic or Subject:", placeholder="e.g., Photosynthesis, Python Loops, Newton's Laws")
